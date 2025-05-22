@@ -1,0 +1,100 @@
+body {
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background-color: #f0f2f5;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.instructions {
+  margin-bottom: 1rem;
+  padding-left: 1.25rem;
+}
+
+form {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.75rem;
+  font-weight: bold;
+}
+
+label .tooltip {
+  margin-left: 0.25rem;
+  cursor: help;
+  text-decoration: underline dotted;
+  font-weight: normal;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #0078d4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.process-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.process-table th,
+.process-table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.process-table th {
+  background: #f0f0f0;
+  text-align: left;
+}
+
+.priority.high {
+  color: green;
+  font-weight: bold;
+}
+
+.priority.medium {
+  color: orange;
+  font-weight: bold;
+}
+
+.priority.low {
+  color: red;
+  font-weight: bold;
+}
