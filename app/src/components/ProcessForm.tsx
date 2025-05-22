@@ -16,6 +16,19 @@ interface Props {
 
 const scoreOptions = [1, 2, 3, 4, 5];
 
+const tooltips = {
+  complexity:
+    'Assess how complicated the task is and whether it follows clear rules or patterns.',
+  frequency: 'Determine how often the process occurs and the volume it handles.',
+  data: 'Evaluate the volume and quality of data available to inform the AI.',
+  manual:
+    'Estimate the current manual workload and pain points that automation could reduce.',
+  compliance:
+    'Consider regulatory constraints and risk of errors when applying AI.',
+  impact:
+    'Estimate the potential upside if the process is improved with AI.'
+};
+
 export default function ProcessForm({ onAdd }: Props) {
   const [input, setInput] = useState<ProcessInput>({
     name: '',
@@ -46,37 +59,43 @@ export default function ProcessForm({ onAdd }: Props) {
         <input name="name" value={input.name} onChange={handleChange} type="text" />
       </label>
       <label>
-        Complexity & Predictability
+        Complexity &amp; Predictability
+        <span className="tooltip" title={tooltips.complexity}>?</span>
         <select name="complexity" value={input.complexity} onChange={handleChange}>
           {scoreOptions.map(o => <option key={o} value={o}>{o}</option>)}
         </select>
       </label>
       <label>
-        Frequency & Volume
+        Frequency &amp; Volume
+        <span className="tooltip" title={tooltips.frequency}>?</span>
         <select name="frequency" value={input.frequency} onChange={handleChange}>
           {scoreOptions.map(o => <option key={o} value={o}>{o}</option>)}
         </select>
       </label>
       <label>
-        Data Availability & Quality
+        Data Availability &amp; Quality
+        <span className="tooltip" title={tooltips.data}>?</span>
         <select name="data" value={input.data} onChange={handleChange}>
           {scoreOptions.map(o => <option key={o} value={o}>{o}</option>)}
         </select>
       </label>
       <label>
-        Manual Effort & Resource Intensity
+        Manual Effort &amp; Resource Intensity
+        <span className="tooltip" title={tooltips.manual}>?</span>
         <select name="manualEffort" value={input.manualEffort} onChange={handleChange}>
           {scoreOptions.map(o => <option key={o} value={o}>{o}</option>)}
         </select>
       </label>
       <label>
         Compliance and Risk Requirements
+        <span className="tooltip" title={tooltips.compliance}>?</span>
         <select name="compliance" value={input.compliance} onChange={handleChange}>
           {scoreOptions.map(o => <option key={o} value={o}>{o}</option>)}
         </select>
       </label>
       <label>
         Impact on Revenue or Customer Experience
+        <span className="tooltip" title={tooltips.impact}>?</span>
         <select name="impact" value={input.impact} onChange={handleChange}>
           {scoreOptions.map(o => <option key={o} value={o}>{o}</option>)}
         </select>

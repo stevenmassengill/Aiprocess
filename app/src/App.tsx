@@ -25,8 +25,9 @@ export default function App() {
   };
 
   return (
-    <div>
+    <div className="container">
       <h1>AI Agent Factory Process Evaluator</h1>
+      <p>Hover over the info icons to learn how each criterion impacts AI readiness.</p>
       <ProcessForm onAdd={handleAdd} />
       <ProcessList processes={processes} />
     </div>
