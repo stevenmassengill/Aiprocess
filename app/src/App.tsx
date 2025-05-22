@@ -28,6 +28,11 @@ export default function App() {
     <div className="container">
       <h1>AI Agent Factory Process Evaluator</h1>
       <p>Hover over the info icons to learn how each criterion impacts AI readiness.</p>
+      <ol className="instructions">
+        <li>Select a process from the drop-down list.</li>
+        <li>Review the descriptions and choose a score for each criterion.</li>
+        <li>Click <strong>Add Process</strong> to calculate the priority.</li>
+      </ol>
       <ProcessForm onAdd={handleAdd} />
       <ProcessList processes={processes} />
     </div>

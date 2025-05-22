@@ -4,6 +4,13 @@ This repository contains a simple React + TypeScript application to help financi
 
 The UI includes tooltips explaining each criterion so evaluators can quickly reference the methodology while entering scores.
 
+## Using the Process Evaluator
+
+1. **Select a process** from the drop-down list.
+2. **Score each criterion** from 1 (low) to 5 (high) using the descriptions shown in each menu.
+3. Press **Add Process** to calculate the overall priority.
+4. Review the resulting table to see which processes have the highest potential for AI enablement.
+
 ## Running locally
 
 1. Install Node.js (version 18 or later).
