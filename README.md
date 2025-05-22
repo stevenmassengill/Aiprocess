@@ -2,6 +2,8 @@
 
 This repository contains a simple React + TypeScript application to help financial services organizations identify business processes that are good candidates for AI enablement. The app follows the methodology outlined in the repository issue, scoring each process on criteria such as complexity, frequency, data availability, manual effort, compliance, and impact.
 
+The UI includes tooltips explaining each criterion so evaluators can quickly reference the methodology while entering scores.
+
 ## Running locally
 
 1. Install Node.js (version 18 or later).
