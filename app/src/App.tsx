@@ -25,8 +25,18 @@ export default function App() {
   };
 
   return (
-    <div>
+    <div className="container">
       <h1>AI Agent Factory Process Evaluator</h1>
+      <div className="instructions">
+        <ol>
+          <li>Select a process from the list.</li>
+          <li>
+            Rate each criterion from 1 (low) to 5 (high). Hover the ? icons for guidance.
+          </li>
+          <li>Click <strong>Add Process</strong>.</li>
+          <li>Review the priority ranking in the table below.</li>
+        </ol>
+      </div>
       <ProcessForm onAdd={handleAdd} />
       <ProcessList processes={processes} />
     </div>
